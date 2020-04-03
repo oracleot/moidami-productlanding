@@ -10,16 +10,19 @@
     justify-content: space-between;
     position: fixed;
     width: 100%;
-    clear: both;
-   
+    z-index: 2;
+    background-color: #fff;
 }
 
 #nav-bar a{
     padding: 0 0.5rem;
     margin-left: 2rem;
 
-    
 }
-main{
-    margin-top: 300px;
+main {
+  min-height: 1200px;
+}
+main, footer {
+  position: relative;
+  top: 120px;
 }
