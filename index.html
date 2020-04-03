@@ -5,7 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Product Landing - Microverse Trial</title>
-  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#header{
+    padding: 1.5rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    background-color: #fff;
+}
+
+#nav-bar a{
+    padding: 0 0.5rem;
+    margin-left: 2rem;
+
+}
+main {
+  min-height: 1200px;
+}
+main, footer {
+  position: relative;
+  top: 120px;
+}
+
+@media screen and (max-width: 650px){
+    #header{
+        flex-direction: column;
+    }
+    #nav-bar{
+        margin-top: 10px;
+    }
+    
+}
+
+  </style>
 </head>
 <body>
   <header id='header'>
@@ -17,7 +58,7 @@
     </nav>
   </header>
   <main>
-    <section id='form'>
+    <section>
       <form id='form' method="post" action='https://www.freecodecamp.com/email-submit'>
         <input type='email' name='email' id='email' placeholder="Email Address" /><br />
         <input type='submit' id='submit' value='Submit' />

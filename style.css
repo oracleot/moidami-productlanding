@@ -26,3 +26,13 @@ main, footer {
   position: relative;
   top: 120px;
 }
+
+@media screen and (max-width: 650px){
+    #header{
+        flex-direction: column;
+    }
+    #nav-bar{
+        margin-top: 10px;
+    }
+    
+}
